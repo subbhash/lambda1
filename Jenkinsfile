@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/subbhash/lambda1.git'
+              
             }
         }
         stage("Build") {
