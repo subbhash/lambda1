@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '<credentials_id>', url: '<repo_url>']]])
+                git branch: 'main', url: 'https://github.com/subbhash/lambda1.git'
             }
         }
         stage("Build") {
